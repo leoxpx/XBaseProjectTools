@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  YXNavigationController.h
 //  XPXBaseProjectTools
 //
 //  Created by 许鹏翔 on 2017/6/7.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface XNavigationController : UINavigationController
 
 @end
-

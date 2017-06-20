@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  XViewTools.h
 //  XPXBaseProjectTools
 //
 //  Created by 许鹏翔 on 2017/6/7.
@@ -8,8 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface XViewTools : UIView
+
+//旋转动画
+-(void)startRotate:(BOOL)isStart theView:(UIView *)view; /**< 旋转动画 */
+
 
 
 @end
-

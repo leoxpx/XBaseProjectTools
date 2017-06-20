@@ -2,8 +2,8 @@
 //  ViewController.m
 //  XPXBaseProjectTools
 //
-//  Created by 薪王iOS1 on 2017/6/7.
-//  Copyright © 2017年 LeoTeam. All rights reserved.
+//  Created by 许鹏翔 on 2017/6/7.
+//  Copyright © 2017年 XTeam. All rights reserved.
 //
 
 #import "ViewController.h"

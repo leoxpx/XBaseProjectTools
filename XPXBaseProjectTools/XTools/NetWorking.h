@@ -1,9 +1,9 @@
 //
 //  NetWorking.h
-//  youxin
+//  XPXBaseProjectTools
 //
-//  Created by ldhios2 on 17/3/28.
-//  Copyright © 2017年 杭州稳瞻信息科技有限公司. All rights reserved.
+//  Created by 许鹏翔 on 2017/6/7.
+//  Copyright © 2017年 XTeam. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -31,6 +31,7 @@ typedef void(^AFNUploadFileBlock)(id formData);
 
 //PUT
 + (void)PUTWithURLString:(NSString *)urlString Parameters:(NSDictionary *)parameters successBlock:(AFNSuccessBlock)success failure:(AFNFailureBlock)failure;
+
 // 上传文件
 + (void)UpLoadFileWithURLString:(NSString *)urlString Parameters:(NSDictionary *)parameters uploadFile:(AFNUploadFileBlock)uploadFiles successBlock:(AFNSuccessBlock)success failure:(AFNFailureBlock)failure;
 

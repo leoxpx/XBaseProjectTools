@@ -1,14 +1,14 @@
 //
 //  YXDataTools.m
-//  youxin
+//  XPXBaseProjectTools
 //
-//  Created by 薪王iOS1 on 2017/4/14.
-//  Copyright © 2017年 杭州稳瞻信息科技有限公司. All rights reserved.
+//  Created by 许鹏翔 on 2017/6/7.
+//  Copyright © 2017年 XTeam. All rights reserved.
 //
 
-#import "YXDataTools.h"
+#import "XDataTools.h"
 
-@implementation YXDataTools
+@implementation XDataTools
 
 
 #pragma mark - ------------------------- 数据处理 ------------------------

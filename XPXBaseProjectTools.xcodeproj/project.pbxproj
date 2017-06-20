@@ -13,15 +13,21 @@
 		BE11E4B41EE7F9F3003CDE43 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE11E4B21EE7F9F3003CDE43 /* Main.storyboard */; };
 		BE11E4B61EE7F9F3003CDE43 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE11E4B51EE7F9F3003CDE43 /* Assets.xcassets */; };
 		BE11E4B91EE7F9F3003CDE43 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE11E4B71EE7F9F3003CDE43 /* LaunchScreen.storyboard */; };
-		BE11E4C51EE808C3003CDE43 /* YXDetailInfoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BE11E4C41EE808C3003CDE43 /* YXDetailInfoCell.m */; };
+		BE11E4C51EE808C3003CDE43 /* XDetailInfoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BE11E4C41EE808C3003CDE43 /* XDetailInfoCell.m */; };
 		BE11E4C81EE80910003CDE43 /* NetWorking.m in Sources */ = {isa = PBXBuildFile; fileRef = BE11E4C71EE80910003CDE43 /* NetWorking.m */; };
-		BE11E4CB1EE809C0003CDE43 /* YXTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE11E4CA1EE809C0003CDE43 /* YXTabBarController.m */; };
-		BE11E4CE1EE809C8003CDE43 /* YXNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE11E4CD1EE809C8003CDE43 /* YXNavigationController.m */; };
-		BE11E4D11EE809D1003CDE43 /* YXDataTools.m in Sources */ = {isa = PBXBuildFile; fileRef = BE11E4D01EE809D1003CDE43 /* YXDataTools.m */; };
+		BE11E4CB1EE809C0003CDE43 /* XTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE11E4CA1EE809C0003CDE43 /* XTabBarController.m */; };
+		BE11E4CE1EE809C8003CDE43 /* XNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE11E4CD1EE809C8003CDE43 /* XNavigationController.m */; };
+		BE11E4D11EE809D1003CDE43 /* XDataTools.m in Sources */ = {isa = PBXBuildFile; fileRef = BE11E4D01EE809D1003CDE43 /* XDataTools.m */; };
 		BE11E4D81EE809DC003CDE43 /* UIBarButtonItem+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = BE11E4D31EE809DC003CDE43 /* UIBarButtonItem+Category.m */; };
 		BE11E4D91EE809DC003CDE43 /* UILabel+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = BE11E4D51EE809DC003CDE43 /* UILabel+Category.m */; };
 		BE11E4DA1EE809DC003CDE43 /* UIButton+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = BE11E4D71EE809DC003CDE43 /* UIButton+Category.m */; };
 		BE11E4DD1EE80A03003CDE43 /* LeadPageView.m in Sources */ = {isa = PBXBuildFile; fileRef = BE11E4DC1EE80A03003CDE43 /* LeadPageView.m */; };
+		BE9F4E681EEA41A200EEDFBB /* XViewTools.m in Sources */ = {isa = PBXBuildFile; fileRef = BE9F4E671EEA41A200EEDFBB /* XViewTools.m */; };
+		BE9F4E6B1EEA428000EEDFBB /* XProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = BE9F4E6A1EEA428000EEDFBB /* XProgressHUD.m */; };
+		BE9F4E701EEA433A00EEDFBB /* hud_success@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BE9F4E6D1EEA433A00EEDFBB /* hud_success@2x.png */; };
+		BE9F4E711EEA433A00EEDFBB /* hud_success@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = BE9F4E6E1EEA433A00EEDFBB /* hud_success@3x.png */; };
+		BE9F4E761EEA434300EEDFBB /* hud_warning@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BE9F4E731EEA434300EEDFBB /* hud_warning@2x.png */; };
+		BE9F4E771EEA434300EEDFBB /* hud_warning@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = BE9F4E741EEA434300EEDFBB /* hud_warning@3x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,16 +42,16 @@
 		BE11E4B81EE7F9F3003CDE43 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BE11E4BA1EE7F9F3003CDE43 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BE11E4C21EE807EC003CDE43 /* XHong.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHong.h; sourceTree = "<group>"; };
-		BE11E4C31EE808C3003CDE43 /* YXDetailInfoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YXDetailInfoCell.h; sourceTree = "<group>"; };
-		BE11E4C41EE808C3003CDE43 /* YXDetailInfoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YXDetailInfoCell.m; sourceTree = "<group>"; };
+		BE11E4C31EE808C3003CDE43 /* XDetailInfoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XDetailInfoCell.h; sourceTree = "<group>"; };
+		BE11E4C41EE808C3003CDE43 /* XDetailInfoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XDetailInfoCell.m; sourceTree = "<group>"; };
 		BE11E4C61EE80910003CDE43 /* NetWorking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetWorking.h; sourceTree = "<group>"; };
 		BE11E4C71EE80910003CDE43 /* NetWorking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetWorking.m; sourceTree = "<group>"; };
-		BE11E4C91EE809C0003CDE43 /* YXTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YXTabBarController.h; sourceTree = "<group>"; };
-		BE11E4CA1EE809C0003CDE43 /* YXTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YXTabBarController.m; sourceTree = "<group>"; };
-		BE11E4CC1EE809C8003CDE43 /* YXNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YXNavigationController.h; sourceTree = "<group>"; };
-		BE11E4CD1EE809C8003CDE43 /* YXNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YXNavigationController.m; sourceTree = "<group>"; };
-		BE11E4CF1EE809D1003CDE43 /* YXDataTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YXDataTools.h; sourceTree = "<group>"; };
-		BE11E4D01EE809D1003CDE43 /* YXDataTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YXDataTools.m; sourceTree = "<group>"; };
+		BE11E4C91EE809C0003CDE43 /* XTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XTabBarController.h; sourceTree = "<group>"; };
+		BE11E4CA1EE809C0003CDE43 /* XTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XTabBarController.m; sourceTree = "<group>"; };
+		BE11E4CC1EE809C8003CDE43 /* XNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XNavigationController.h; sourceTree = "<group>"; };
+		BE11E4CD1EE809C8003CDE43 /* XNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XNavigationController.m; sourceTree = "<group>"; };
+		BE11E4CF1EE809D1003CDE43 /* XDataTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XDataTools.h; sourceTree = "<group>"; };
+		BE11E4D01EE809D1003CDE43 /* XDataTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XDataTools.m; sourceTree = "<group>"; };
 		BE11E4D21EE809DC003CDE43 /* UIBarButtonItem+Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+Category.h"; sourceTree = "<group>"; };
 		BE11E4D31EE809DC003CDE43 /* UIBarButtonItem+Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+Category.m"; sourceTree = "<group>"; };
 		BE11E4D41EE809DC003CDE43 /* UILabel+Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+Category.h"; sourceTree = "<group>"; };
@@ -54,6 +60,15 @@
 		BE11E4D71EE809DC003CDE43 /* UIButton+Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Category.m"; sourceTree = "<group>"; };
 		BE11E4DB1EE80A03003CDE43 /* LeadPageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeadPageView.h; sourceTree = "<group>"; };
 		BE11E4DC1EE80A03003CDE43 /* LeadPageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeadPageView.m; sourceTree = "<group>"; };
+		BE9F4E651EEA3E0400EEDFBB /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		BE9F4E661EEA41A200EEDFBB /* XViewTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XViewTools.h; sourceTree = "<group>"; };
+		BE9F4E671EEA41A200EEDFBB /* XViewTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XViewTools.m; sourceTree = "<group>"; };
+		BE9F4E691EEA428000EEDFBB /* XProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XProgressHUD.h; sourceTree = "<group>"; };
+		BE9F4E6A1EEA428000EEDFBB /* XProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XProgressHUD.m; sourceTree = "<group>"; };
+		BE9F4E6D1EEA433A00EEDFBB /* hud_success@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hud_success@2x.png"; sourceTree = "<group>"; };
+		BE9F4E6E1EEA433A00EEDFBB /* hud_success@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hud_success@3x.png"; sourceTree = "<group>"; };
+		BE9F4E731EEA434300EEDFBB /* hud_warning@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hud_warning@2x.png"; sourceTree = "<group>"; };
+		BE9F4E741EEA434300EEDFBB /* hud_warning@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hud_warning@3x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,19 +126,28 @@
 		BE11E4C11EE807EC003CDE43 /* XTools */ = {
 			isa = PBXGroup;
 			children = (
+				BE9F4E651EEA3E0400EEDFBB /* PrefixHeader.pch */,
 				BE11E4C21EE807EC003CDE43 /* XHong.h */,
 				BE11E4DB1EE80A03003CDE43 /* LeadPageView.h */,
 				BE11E4DC1EE80A03003CDE43 /* LeadPageView.m */,
 				BE11E4C61EE80910003CDE43 /* NetWorking.h */,
 				BE11E4C71EE80910003CDE43 /* NetWorking.m */,
-				BE11E4C31EE808C3003CDE43 /* YXDetailInfoCell.h */,
-				BE11E4C41EE808C3003CDE43 /* YXDetailInfoCell.m */,
-				BE11E4C91EE809C0003CDE43 /* YXTabBarController.h */,
-				BE11E4CA1EE809C0003CDE43 /* YXTabBarController.m */,
-				BE11E4CC1EE809C8003CDE43 /* YXNavigationController.h */,
-				BE11E4CD1EE809C8003CDE43 /* YXNavigationController.m */,
-				BE11E4CF1EE809D1003CDE43 /* YXDataTools.h */,
-				BE11E4D01EE809D1003CDE43 /* YXDataTools.m */,
+				BE9F4E691EEA428000EEDFBB /* XProgressHUD.h */,
+				BE9F4E6A1EEA428000EEDFBB /* XProgressHUD.m */,
+				BE9F4E6D1EEA433A00EEDFBB /* hud_success@2x.png */,
+				BE9F4E6E1EEA433A00EEDFBB /* hud_success@3x.png */,
+				BE9F4E731EEA434300EEDFBB /* hud_warning@2x.png */,
+				BE9F4E741EEA434300EEDFBB /* hud_warning@3x.png */,
+				BE11E4C31EE808C3003CDE43 /* XDetailInfoCell.h */,
+				BE11E4C41EE808C3003CDE43 /* XDetailInfoCell.m */,
+				BE11E4C91EE809C0003CDE43 /* XTabBarController.h */,
+				BE11E4CA1EE809C0003CDE43 /* XTabBarController.m */,
+				BE11E4CC1EE809C8003CDE43 /* XNavigationController.h */,
+				BE11E4CD1EE809C8003CDE43 /* XNavigationController.m */,
+				BE11E4CF1EE809D1003CDE43 /* XDataTools.h */,
+				BE11E4D01EE809D1003CDE43 /* XDataTools.m */,
+				BE9F4E661EEA41A200EEDFBB /* XViewTools.h */,
+				BE9F4E671EEA41A200EEDFBB /* XViewTools.m */,
 				BE11E4D21EE809DC003CDE43 /* UIBarButtonItem+Category.h */,
 				BE11E4D31EE809DC003CDE43 /* UIBarButtonItem+Category.m */,
 				BE11E4D41EE809DC003CDE43 /* UILabel+Category.h */,
@@ -195,8 +219,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				BE11E4B91EE7F9F3003CDE43 /* LaunchScreen.storyboard in Resources */,
+				BE9F4E761EEA434300EEDFBB /* hud_warning@2x.png in Resources */,
+				BE9F4E701EEA433A00EEDFBB /* hud_success@2x.png in Resources */,
+				BE9F4E771EEA434300EEDFBB /* hud_warning@3x.png in Resources */,
 				BE11E4B61EE7F9F3003CDE43 /* Assets.xcassets in Resources */,
 				BE11E4B41EE7F9F3003CDE43 /* Main.storyboard in Resources */,
+				BE9F4E711EEA433A00EEDFBB /* hud_success@3x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -208,13 +236,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				BE11E4B11EE7F9F3003CDE43 /* ViewController.m in Sources */,
-				BE11E4CE1EE809C8003CDE43 /* YXNavigationController.m in Sources */,
+				BE11E4CE1EE809C8003CDE43 /* XNavigationController.m in Sources */,
+				BE9F4E681EEA41A200EEDFBB /* XViewTools.m in Sources */,
 				BE11E4D81EE809DC003CDE43 /* UIBarButtonItem+Category.m in Sources */,
 				BE11E4DD1EE80A03003CDE43 /* LeadPageView.m in Sources */,
-				BE11E4C51EE808C3003CDE43 /* YXDetailInfoCell.m in Sources */,
-				BE11E4CB1EE809C0003CDE43 /* YXTabBarController.m in Sources */,
-				BE11E4D11EE809D1003CDE43 /* YXDataTools.m in Sources */,
+				BE11E4C51EE808C3003CDE43 /* XDetailInfoCell.m in Sources */,
+				BE11E4CB1EE809C0003CDE43 /* XTabBarController.m in Sources */,
+				BE11E4D11EE809D1003CDE43 /* XDataTools.m in Sources */,
 				BE11E4AE1EE7F9F3003CDE43 /* AppDelegate.m in Sources */,
+				BE9F4E6B1EEA428000EEDFBB /* XProgressHUD.m in Sources */,
 				BE11E4C81EE80910003CDE43 /* NetWorking.m in Sources */,
 				BE11E4D91EE809DC003CDE43 /* UILabel+Category.m in Sources */,
 				BE11E4DA1EE809DC003CDE43 /* UIButton+Category.m in Sources */,
@@ -337,6 +367,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = L37SXG465L;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/XPXBaseProjectTools/XTools/PrefixHeader.pch";
 				INFOPLIST_FILE = XPXBaseProjectTools/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Leo.XPXBaseProjectTools;
@@ -349,6 +380,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = L37SXG465L;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/XPXBaseProjectTools/XTools/PrefixHeader.pch";
 				INFOPLIST_FILE = XPXBaseProjectTools/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Leo.XPXBaseProjectTools;
@@ -375,6 +407,7 @@
 				BE11E4BF1EE7F9F3003CDE43 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -10,6 +10,18 @@
 #define XHong_h
 
 
+#ifdef __OBJC__
+
+// 需导入 Masonry AFNetworking MBProgressHUD FMDB
+#import "NetWorking.h"
+#import "XProgressHUD.h"
+#import "UIButton+Category.h"
+#import "UILabel+Category.h"
+
+
+#endif
+
+
 #pragma mark - 系统相关 (宏 定义)
 //** 沙盒路径 ***********************************************************************************
 #define PATH_OF_APP_HOME    NSHomeDirectory()
@@ -63,7 +75,7 @@
 //** NSString ********************************************************************************
 #define URL(url)             [NSURL URLWithString:url]
 #define String(str1,str2)    [NSString stringWithFormat:@"%@%@",str1,str2]
-#define String_string(str1)  [NSString stringWithFormat:@"%@",str1]
+#define String_id(id)        [NSString stringWithFormat:@"%@",id]
 #define String_Number(num1)  [NSString stringWithFormat:@"%d",num1]
 #define String_Integer(num1) [NSString stringWithFormat:@"%ld",num1]
 #define String_Float(flo1)   [NSString stringWithFormat:@"%.2f",flo1]
@@ -98,7 +110,6 @@
 #define DSystemVersion          ([[[UIDevice currentDevice] systemVersion] doubleValue])
 #define SSystemVersion          ([[UIDevice currentDevice] systemVersion])
 
-
 //** UIView - viewWithTag ********************************************************************
 #define View_With_Tag(_OBJECT, _TAG)\
 \
@@ -118,14 +129,13 @@ description:__VA_ARGS__];\
 }\
 } while(0)
 
-#pragma mark - 自定义 (方法)
-//** 过滤字符串为空 *************************************************************************
-#define IF_NULL_TO_String(x) ([(x) isEqual:[NSNull null]]||(x)==nil)? @"":TEXT_STRING(x)
-// 转换为字符串
-#define TEXT_STRING(x) [NSString stringWithFormat:@"%@",x]
 
-//** 字体大小(常规/粗体) *************************************************************************
+#pragma mark - 自定义 (方法)
+//** 弱引用 self *************************************************************************
 #define WS(weakSelf)  __weak __typeof(&*self)weakSelf = self;
+
+//** 过滤字符串为空 *************************************************************************
+#define Null_To_String(x) ([(x) isEqual:[NSNull null]]||(x)==nil)? @"":TEXT_STRING(x)
 
 //**  *************************************************************************
 

@@ -1,24 +1,24 @@
 //
 //  YXTabBarController.m
-//  youxin_company
+//  XPXBaseProjectTools
 //
-//  Created by 薪王iOS1 on 2017/4/17.
-//  Copyright © 2017年 杭州稳瞻信息科技有限公司. All rights reserved.
+//  Created by 许鹏翔 on 2017/6/7.
+//  Copyright © 2017年 XTeam. All rights reserved.
 //
 
-#import "YXTabBarController.h"
-#import "YXNavigationController.h"
+#import "XTabBarController.h"
+#import "XNavigationController.h"
 #import "HomePageVC.h"
 #import "CreditVC.h"
 #import "LoanVC.h"
 #import "MineVC.h"
 #import "LoginVC.h"
 
-@interface YXTabBarController ()<UITabBarControllerDelegate>
+@interface XTabBarController () <UITabBarControllerDelegate>
 
 @end
 
-@implementation YXTabBarController
+@implementation XTabBarController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -41,10 +41,9 @@
         YXNavigationController *nvc4 = [[YXNavigationController alloc] initWithRootViewController:mine];
         
         
-        
         nvc1.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"首页" image:[[UIImage imageNamed:@"home"]imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] selectedImage:[[UIImage imageNamed:@"home_select"]imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal ]];
-        nvc2.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"征信" image:[[UIImage imageNamed:@"credit"]imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] selectedImage:[[UIImage imageNamed:@"credit_select"]imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal]];
-        nvc3.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"借款" image:[[UIImage imageNamed:@"loan"]imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] selectedImage:[[UIImage imageNamed:@"loan_select"]imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal]];
+        nvc2.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"二页" image:[[UIImage imageNamed:@"credit"]imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] selectedImage:[[UIImage imageNamed:@"credit_select"]imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal]];
+        nvc3.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"三页" image:[[UIImage imageNamed:@"loan"]imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] selectedImage:[[UIImage imageNamed:@"loan_select"]imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal]];
         nvc4.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"我的" image:[[UIImage imageNamed:@"mine"]imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] selectedImage:[[UIImage imageNamed:@"mine_select"]imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal]];
         
         self.tabBar.tintColor = MAINCOLOR;
@@ -71,15 +70,11 @@
             LoginVC *loginVC = [[LoginVC alloc] init];
             loginVC.navigationController = self.navigationController;
             [self presentViewController:loginVC animated:YES completion:nil];
-            
             return NO;
         }
-        
-        
     }else{
         return YES;
     }
-    
 }
 
 

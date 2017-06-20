@@ -1,14 +1,14 @@
 //
 //  GSDetailInfoCell.m
-//  youxin
+//  XPXBaseProjectTools
 //
-//  Created by 薪王iOS1 on 2017/4/12.
-//  Copyright © 2017年 杭州稳瞻信息科技有限公司. All rights reserved.
+//  Created by 许鹏翔 on 2017/6/7.
+//  Copyright © 2017年 XTeam. All rights reserved.
 //
 
-#import "YXDetailInfoCell.h"
+#import "XDetailInfoCell.h"
 
-@interface YXDetailInfoCell ()
+@interface XDetailInfoCell ()
 {
 //    UIImageView *_moreImage;
 }
@@ -16,7 +16,7 @@
 
 @end
 
-@implementation YXDetailInfoCell
+@implementation XDetailInfoCell
 
 - (void)awakeFromNib {
     [super awakeFromNib];
@@ -30,6 +30,7 @@
 }
 
 -(instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier{
+    
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
     if (self) {
         

@@ -1,14 +1,14 @@
 //
 //  YXDataTools.h
-//  youxin
+//  XPXBaseProjectTools
 //
-//  Created by 薪王iOS1 on 2017/4/14.
-//  Copyright © 2017年 杭州稳瞻信息科技有限公司. All rights reserved.
+//  Created by 许鹏翔 on 2017/6/7.
+//  Copyright © 2017年 XTeam. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
 
-@interface YXDataTools : NSObject
+@interface XDataTools : NSObject
 
 //字典转str
 + (NSString *)JSONDictionaryToString:(NSDictionary *)dic;
@@ -28,11 +28,9 @@
 //删数据
 + (void)deleteDBData:(NSString *)infoName;
 
-//过滤 null 为 @""
+
 +(NSString *)filterStrNull:(NSString *)oldString; /**< 过滤 null 为 @"" */
-//过滤 null 为 "0.00"
 +(NSString *)filterStrNullToZero:(NSString *)oldString; /**< 过滤 null 为 "0.00" */
-// 是否是数组
 +(BOOL)isArrayNotDict:(id)responseObject; /**< 判断是否是 数组 */
 
 
@@ -55,7 +53,6 @@
 + (BOOL)checkChineseName : (NSString *)userName;//中文名称
 + (BOOL)checkSchoolPassword:(NSString *)userName;//学信密码
 
-//选择器 年月
 
 // 删除float末位0
 - (NSString *)deleteZeroWithString:(NSString *)str;
