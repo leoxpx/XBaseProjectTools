@@ -8,9 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface LeadPageView : UIView <UIScrollViewDelegate>
+@interface XLeadPageView : UIView <UIScrollViewDelegate>
 
 //创建引导页
-- (id)initWithFrame:(CGRect)frame;
+- (id)initWithFrame:(CGRect)frame imageArray:(NSArray *)images;
 
 @end

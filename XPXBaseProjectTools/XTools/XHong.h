@@ -9,18 +9,33 @@
 #ifndef XHong_h
 #define XHong_h
 
-
 #ifdef __OBJC__
-
-// 需导入 Masonry AFNetworking MBProgressHUD FMDB
-#import "NetWorking.h"
-#import "XProgressHUD.h"
-#import "UIButton+Category.h"
-#import "UILabel+Category.h"
-
 
 #endif
 
+
+#pragma mark - 项目相关 (宏 定义)
+//** 项目相关 ***********************************************************************************
+/*
+    Tag值:
+ 
+    通知关键字:
+ 
+ */
+
+#define TagModifyPhoneBtn1 101
+#define TagModifyPhoneBtn2 102
+
+#define NotificationGetAccountInfo @"notificationGetAccountInfo"
+
+
+
+
+//** 颜色 ***********************************************************************************
+#define MainColor RGB(119, 209, 101)
+#define BackgroundColor RGB(235, 235, 235)
+#define CellColor RGB(235, 235, 235)
+#define btnHeight 50
 
 #pragma mark - 系统相关 (宏 定义)
 //** 沙盒路径 ***********************************************************************************
@@ -51,6 +66,8 @@
 
 
 #pragma mark - 系统相关 (宏 方法)
+//** 弱指针 ********************************************************************************
+#define WeakSelf(weakSelf)  __weak __typeof(&*self)weakSelf = self;
 //** DEBUG LOG ********************************************************************************
 #ifdef DEBUG
 
@@ -68,12 +85,13 @@
 #define PATH(NAME, EXT)         [[NSBundle mainBundle] pathForResource:(NAME) ofType:(EXT)]
 
 // 加载图片
-#define Image_PNG(NAME)          [UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:(NAME) ofType:@"png"]]
-#define Image_JPG(NAME)          [UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:(NAME) ofType:@"jpg"]]
+#define Image_PNG(NAME)          [UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:([NSString stringWithFormat:@"%@@2x", NAME]) ofType:@"png"]]
+#define Image_JPG(NAME)          [UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:([NSString stringWithFormat:@"%@@2x", NAME]) ofType:@"jpg"]]
 #define Image_Named(imgName) [UIImage imageNamed:imgName]
+#define Image_Url(urlStr) [UIImage imageNamed:imgName]
 
 //** NSString ********************************************************************************
-#define URL(url)             [NSURL URLWithString:url]
+#define URL(urlStr)          [NSURL URLWithString:urlStr]
 #define String(str1,str2)    [NSString stringWithFormat:@"%@%@",str1,str2]
 #define String_id(id)        [NSString stringWithFormat:@"%@",id]
 #define String_Number(num1)  [NSString stringWithFormat:@"%d",num1]

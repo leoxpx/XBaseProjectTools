@@ -9,10 +9,6 @@
 #import "XDetailInfoCell.h"
 
 @interface XDetailInfoCell ()
-{
-//    UIImageView *_moreImage;
-}
-
 
 @end
 
@@ -29,7 +25,8 @@
     // Configure the view for the selected state
 }
 
--(instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier{
+
+- (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier{
     
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
     if (self) {
@@ -51,11 +48,11 @@
         }];
         
         self.moreImage = [[UIImageView alloc] init];
-        self.moreImage.image = [UIImage imageNamed:@"cell_more_right"];
+        self.moreImage.image = [UIImage imageNamed:@"cell_more"];
         [self.contentView addSubview:self.moreImage];
         [self.moreImage mas_makeConstraints:^(MASConstraintMaker *make) {
             make.left.equalTo(self.contentView.mas_right).with.offset(-30);
-            make.size.mas_equalTo(CGSizeMake(10, 18));
+            make.size.mas_equalTo(CGSizeMake(7, 13));
             make.centerY.equalTo(self.contentView.mas_centerY);
         }];
         
@@ -74,6 +71,7 @@
     }
     
     return self;
+    
 }
 
 - (void)setImageStr:(NSString *)image title:(NSString *)title detail:(NSString *)detail more:(BOOL)haveOrNo {
@@ -105,7 +103,7 @@
             make.right.equalTo(self.contentView.mas_right).with.offset(-20);
         }];
     }
-    
 }
+
 
 @end

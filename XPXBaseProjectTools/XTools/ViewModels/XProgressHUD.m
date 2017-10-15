@@ -12,7 +12,7 @@
 @implementation XProgressHUD
 
 // 加载框
--(void)showHUDView:(BOOL)show {
++(void)showHUDView:(BOOL)show {
     
     if (show) {
         MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:[[UIApplication sharedApplication] keyWindow] animated:YES];
@@ -25,9 +25,9 @@
 }
 
 // 提示框
--(void)showHUDView:(UIView *)theView states:(BOOL)successOrFailed title:(NSString *)theTitle content:(NSString *)theContent time:(float)thTime andCodes:(void (^)())finish {
++(void)showHUDView:(UIView *)theView states:(BOOL)successOrFailed title:(NSString *)theTitle content:(NSString *)theContent time:(float)thTime andCodes:(void (^)(void))finish {
     
-    MBProgressHUD *HUD = [MBProgressHUD showHUDAddedTo:[[UIApplication sharedApplication] keyWindow] animated:YES];
+    MBProgressHUD *HUD   = [MBProgressHUD showHUDAddedTo:[[UIApplication sharedApplication] keyWindow] animated:NO];
     HUD.labelText        = theTitle;
     HUD.detailsLabelText = theContent;
     HUD.mode             = MBProgressHUDModeCustomView; // MBProgressHUDModeText;
@@ -45,6 +45,17 @@
     }];
 }
 
-
+// 延迟操作
++ (void)unShowHUDViewSleepTime:(float)thTime andCodes:(void (^)(void))finish {
+    
+    dispatch_async(dispatch_get_global_queue(0, 0), ^{
+       
+        sleep(thTime);
+        
+        dispatch_sync(dispatch_get_main_queue(), ^{
+            finish();
+        });
+    });
+}
 
 @end

@@ -34,8 +34,9 @@
     return dic;
 }
 
+/*
 //创表
-+ (void)createUserDB{
++ (void)createUserDB {
     
     //数据的路径，放在沙盒的cache下面
     NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
@@ -145,6 +146,7 @@
         NSLog(@"删除数据失败");
     }
 }
+*/
 
 //过滤 null 为 @""
 + (NSString *)filterStrNull:(NSString *)oldString{
@@ -212,15 +214,8 @@
 }
 
 
-
 //
 + (NSString *)nowTimeIntervalStr {
-    
-    //    NSDate *date = [NSDate date];
-    //    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
-    //    [formatter setDateStyle:NSDateFormatterMediumStyle];
-    //    [formatter setTimeStyle:NSDateFormatterShortStyle];[formatter setDateFormat:@"YYYY-MM-dd hh:mm:ss"];
-    //    NSString *DateTime = [formatter stringFromDate:date];
     
     NSDate *date = [NSDate dateWithTimeIntervalSinceNow:0];
     //    NSTimeZone *zone = [NSTimeZone systemTimeZone];// 获得系统的时区
@@ -230,25 +225,17 @@
     
     return [timeString componentsSeparatedByString:@"."].firstObject;
 }
-//当前时间 上传
-+ (NSString *)getDateUpLoad:(NSDate *)oldDate{
+// 转为本地时间
++ (NSString *)getLocationDate:(NSDate *)zeroDate {
     
-    //    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
-    //    [formatter setDateFormat:@"yyyy-MM-dd-MM"];
-    //    NSTimeZone *zone = [NSTimeZone systemTimeZone];
-    //    NSInteger interval = [zone secondsFromGMTForDate:oldDate];
-    //    NSDate *localeDate = [oldDate dateByAddingTimeInterval:interval];
-    //    NSString *dateStr = [formatter stringFromDate:localeDate];
-    //
-    //    NSString *dateString = [dateStr componentsSeparatedByString:@" "].firstObject;//@"2016-01-01";
-    
-    NSDateFormatter * formatter2 = [[NSDateFormatter alloc ] init];
-    [formatter2 setTimeZone:[NSTimeZone localTimeZone]];
-    [formatter2 setDateFormat:@"YYYY-MM-dd"];
-    NSString *currentDateStr = [formatter2 stringFromDate:oldDate];
+    NSDateFormatter * formatter = [[NSDateFormatter alloc] init];
+    [formatter setTimeZone:[NSTimeZone localTimeZone]];
+    [formatter setDateFormat:@"YYYY-MM-dd"];
+    NSString *currentDateStr = [formatter stringFromDate:zeroDate];
     
     return currentDateStr;
 }
+
 //当前时间 显示
 + (NSString *)getDateShow:(NSDate *)oldDate{
     
@@ -284,22 +271,15 @@
     NSDate *date = [NSDate dateWithTimeIntervalSince1970:x];
     
     NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
-    [formatter setDateFormat:@"yyyy.MM.dd hh:mm"];
+    [formatter setDateFormat:@"yyyy.MM.dd hh:mm:ss"];
     [formatter setTimeZone:[NSTimeZone localTimeZone]];
     
     NSString *locationDate = [formatter stringFromDate:date];
-    
-    NSDateComponents *components = [[NSCalendar currentCalendar] components:NSCalendarUnitYear | NSCalendarUnitMonth | NSCalendarUnitWeekday | NSCalendarUnitDay fromDate:date];
-    NSInteger year = [components year];
-    NSInteger month = [components month];
-    
-    NSString *dateString = [NSString stringWithFormat:@"%ld年%ld月",(long)year,(long)month];//@"2016年1月";
     
     return locationDate;
 }
 
 #pragma mark - -------------------- 判断输入信息 ---------------
-
 //手机号
 + (BOOL)checkTel:(NSString *)telNumber {
     NSString* number=@"^1[3|4|5|7|8][0-9]\\d{8}$";

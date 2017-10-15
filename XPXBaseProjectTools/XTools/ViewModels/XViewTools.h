@@ -11,8 +11,7 @@
 @interface XViewTools : UIView
 
 //旋转动画
--(void)startRotate:(BOOL)isStart theView:(UIView *)view; /**< 旋转动画 */
-
+- (void)startRotate:(BOOL)isStart theView:(UIView *)view; /**< 旋转动画 */
 
 
 @end

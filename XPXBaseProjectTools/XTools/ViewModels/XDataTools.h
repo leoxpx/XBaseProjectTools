@@ -12,23 +12,18 @@
 
 //字典转str
 + (NSString *)JSONDictionaryToString:(NSDictionary *)dic;
-
 //str转字典
 + (NSDictionary *)stringToJSONDictionary:(NSString *)jsonString;
 
-//建表DB
-+ (void)createUserDB;
+/*
+//数据库
++ (void)createUserDB;//建表DB
++ (void)saveData:(NSDictionary *)dict ToSanBox:(NSString *)pathName;//存数据
++ (id)getDataWithSanBox:(NSString *)pathName;//取数据
++ (void)deleteDBData:(NSString *)infoName;//删数据
+*/
 
-//存数据
-+ (void)saveData:(NSDictionary *)dict ToSanBox:(NSString *)pathName;
-
-//取数据
-+ (id)getDataWithSanBox:(NSString *)pathName;
-
-//删数据
-+ (void)deleteDBData:(NSString *)infoName;
-
-
+// 字符串过滤
 +(NSString *)filterStrNull:(NSString *)oldString; /**< 过滤 null 为 @"" */
 +(NSString *)filterStrNullToZero:(NSString *)oldString; /**< 过滤 null 为 "0.00" */
 +(BOOL)isArrayNotDict:(id)responseObject; /**< 判断是否是 数组 */
@@ -36,7 +31,7 @@
 
 //时间格式
 + (NSString *)nowTimeIntervalStr;
-+ (NSString *)getDateUpLoad:(NSDate *)oldDate;
++ (NSString *)getLocationDate:(NSDate *)zeroDate;/**< 转为本地时间 */
 + (NSString *)getDateShow:(NSDate *)oldDate;
 + (NSString *)returnDate:(NSString *)seconds;
 + (NSString *)getDateShowYMDS:(NSString *)seconds; /**< 返回 年月日时分 */

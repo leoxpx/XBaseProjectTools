@@ -8,11 +8,11 @@
 
 #import "XTabBarController.h"
 #import "XNavigationController.h"
-#import "HomePageVC.h"
-#import "CreditVC.h"
-#import "LoanVC.h"
-#import "MineVC.h"
-#import "LoginVC.h"
+//#import "HomePageVC.h"
+//#import "CreditVC.h"
+//#import "LoanVC.h"
+//#import "MineVC.h"
+//#import "LoginVC.h"
 
 @interface XTabBarController () <UITabBarControllerDelegate>
 
@@ -25,7 +25,7 @@
     
 }
 
-
+/*
 - (instancetype)init {
     
     if (self == [super init]) {
@@ -76,6 +76,6 @@
         return YES;
     }
 }
-
+*/
 
 @end

@@ -15,7 +15,7 @@
     self = [super init];
     if (self) {
         
-        self.textColor = color;
+        self.textColor = color ? color : [UIColor darkTextColor];
         self.font = [UIFont systemFontOfSize:font];
         self.text = text;
         self.textAlignment = alignment;

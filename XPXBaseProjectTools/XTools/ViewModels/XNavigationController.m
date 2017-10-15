@@ -23,9 +23,9 @@
     self = [super initWithRootViewController:viewController];
     if (self) {
         
-        [self.navigationBar setBackgroundImage:[UIImage imageNamed:@""] forBarMetrics:UIBarMetricsDefault];
+        [self.navigationBar setBackgroundImage:[UIImage imageNamed:@"hud_success"] forBarMetrics:UIBarMetricsDefault];
         self.navigationBar.translucent = NO; // 不透明 0,64
-        self.navigationBar.barTintColor = MAINCOLOR;
+        self.navigationBar.barTintColor = MainColor;
     }
     
     return self;
@@ -37,11 +37,12 @@
 }
 
 // 返回事件
--(void)navigationPopBack{
+- (void)navigationPopBack{
     [self.navigationController popViewControllerAnimated:YES];
 }
 
--(void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated {
+
+- (void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated {
     if (self.viewControllers.count > 0) {
         // 自动显示和隐藏tabbar
         viewController.hidesBottomBarWhenPushed = YES;

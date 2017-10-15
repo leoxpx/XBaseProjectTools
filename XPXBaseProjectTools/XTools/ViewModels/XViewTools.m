@@ -10,7 +10,7 @@
 
 @implementation XViewTools
 
-//旋转
+// 旋转
 -(void)startRotate:(BOOL)isStart theView:(UIView *)view {
     
     CABasicAnimation *rotationAnimation = [CABasicAnimation animationWithKeyPath:@"transform.rotation.z"];
@@ -25,7 +25,6 @@
         [view.layer removeAnimationForKey:@"rotationAnimation"];
     }
 }
-
 
 
 @end

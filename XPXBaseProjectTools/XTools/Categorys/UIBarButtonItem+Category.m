@@ -13,8 +13,8 @@
 - (instancetype)initWithImage:(NSString *)image target:(id)target action:(SEL)action {
     
     UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
-    [button setBackgroundImage:[UIImage imageNamed:image] forState:UIControlStateNormal];
-    [button setBackgroundImage:[UIImage imageNamed:[NSString stringWithFormat:@"%@_highlighted",image]] forState:UIControlStateHighlighted];
+    [button setBackgroundImage:[[UIImage imageNamed:image] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] forState:UIControlStateNormal];
+    [button setBackgroundImage:[[UIImage imageNamed:[NSString stringWithFormat:@"%@_highlighted",image]] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal ] forState:UIControlStateHighlighted];
     [button sizeToFit];
     [button addTarget:target action:action forControlEvents:UIControlEventTouchUpInside];
     

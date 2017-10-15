@@ -6,26 +6,23 @@
 //  Copyright © 2017年 XTeam. All rights reserved.
 //
 
-#import "LeadPageView.h"
+#import "XLeadPageView.h"
 
-#define ImageArray @[@"app_leadImg_1",@"app_leadImg_2",@"app_leadImg_3"]
-
-@interface LeadPageView ()
+@interface XLeadPageView ()
 
 @property (nonatomic, weak)UIPageControl *pageControlForImage;
 
 @end
 
-@implementation LeadPageView
+@implementation XLeadPageView
 
-- (id)initWithFrame:(CGRect)frame{
+- (id)initWithFrame:(CGRect)frame imageArray:(NSArray *)images{
     
     self = [super initWithFrame:frame];
     
     if (self) {
         //状态栏黑
         [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleDefault;
-        
         
         CGFloat _width = self.frame.size.width;
         CGFloat _height = self.frame.size.height;
@@ -35,7 +32,7 @@
         scrollView.delegate = self;
         scrollView.showsHorizontalScrollIndicator = NO;
         scrollView.pagingEnabled = YES;
-        [scrollView setContentSize:CGSizeMake(ImageArray.count*_width, 0)];
+        [scrollView setContentSize:CGSizeMake(images.count*_width, 0)];
         [scrollView setContentOffset:CGPointMake(0, 0)];
         [self addSubview:scrollView];
         [scrollView mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -57,13 +54,13 @@
         }];
         
         //创建图片
-        for (int i = 0; i < ImageArray.count; i++) {
-            UIImage * image = Image_PNG(ImageArray[i]);
+        for (int i = 0; i < images.count; i++) {
+            UIImage * image = Image_PNG(images[i]);
             UIImageView * imageView = [[UIImageView alloc]initWithFrame:CGRectMake(_width*i, 0, _width, _height)];
             imageView.image = image;
             [scrollView addSubview:imageView];
             
-            if (i == imageNamesArr.count-1) {
+            if (i == images.count-1) {
                 
                 UIButton * btn = [[UIButton alloc] initWithMainBackGroundColorText:@"立即体验"];
                 [btn addTarget:self action:@selector(btnClick:) forControlEvents:UIControlEventTouchUpInside];
@@ -83,7 +80,7 @@
 //点击事件
 - (void)btnClick:(UIButton *)btn{
     [UIView animateWithDuration:0.5 animations:^{
-        self.frame = CGRectMake(-ScreenWidth, 0, ScreenWidth, ScreenHeight);
+        self.frame = CGRectMake(-Screen_Width, 0, Screen_Width, Screen_Height);
     } completion:^(BOOL finished) {
         [self removeFromSuperview];
         //状态栏白
@@ -93,7 +90,7 @@
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView {
 
-    NSInteger row = scrollView.contentOffset.x/ScreenWidth;
+    NSInteger row = scrollView.contentOffset.x/Screen_Width;
     self.pageControlForImage.currentPage = row;
 }
 
